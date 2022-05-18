@@ -36,10 +36,21 @@ const txt =     "Ich bin " + person.firstName + " " +
 
 
 /***** Objekte 2 - Hierarchie *******/
+// Tiefer, tiefer - Irgendwo in der Tiefe gibt es ein Licht // K.Bush
+// Der Baikalsee ist mit 1642 m der tiefste See der Erde. ...
+// deep - deeper - deepest
 
+const baikal =  {
+                value: "10m",
+                deep:   {
+                        deeper:{
+                                deepest: "Das Licht - auf 1642m!"
+                                }
+                        }
+                };
 
-
-
+output(baikal.value);
+output(baikal.deep.deeper.deepest);
 
 /** Ausgabe */
 function output(outputData) {
